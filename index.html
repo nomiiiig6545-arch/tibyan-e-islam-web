@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tibyan-e-Islam | Official App Showcase</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Noto+Nastaliq+Urdu:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#08130E',
+                            card: '#0F2119',
+                            cardLight: '#142A20',
+                            border: '#1F3F31',
+                            primary: '#10B981',
+                            accent: '#34D399',
+                            gold: '#FBBF24',
+                            goldMuted: '#D97706'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        arabic: ['"Amiri"', 'serif'],
+                        urdu: ['"Noto Nastaliq Urdu"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #08130E;
+            color: #E2E8F0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .urdu-text {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            line-height: 2.2;
+        }
+        .arabic-text {
+            font-family: 'Amiri', serif;
+        }
+        .glass-header {
+            background: rgba(8, 19, 14, 0.85);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="selection:bg-brand-primary selection:text-black">
+
+    <!-- Top Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-header border-b border-brand-border/60">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between" dir="ltr">
+            <!-- Brand Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-primary/10 border border-brand-primary/30 flex items-center justify-center text-brand-primary text-xl">
+                    <i class="fa-solid fa-book-quran"></i>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-xl tracking-tight text-white flex items-center gap-1.5">
+                        Tibyan<span class="text-brand-primary">-e-</span>Islam
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Header Actions -->
+            <div class="flex items-center gap-4">
+                <button onclick="openModal('privacyModal')" class="text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition">
+                    Privacy Policy
+                </button>
+                <a href="#features" class="hidden sm:inline-block px-4 py-2 rounded-full text-xs font-bold bg-brand-primary/10 text-brand-accent border border-brand-primary/30 hover:bg-brand-primary hover:text-black transition">
+                    Explore Features
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 relative overflow-hidden" dir="ltr">
+        <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[550px] h-[550px] bg-brand-primary/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-card border border-brand-border mb-6">
+                <span class="w-2 h-2 rounded-full bg-brand-primary animate-pulse"></span>
+                <span class="text-xs font-semibold text-brand-accent uppercase tracking-wider">The Clarifying Light of Faith</span>
+            </div>
+
+            <div class="arabic-text text-4xl sm:text-6xl text-brand-gold font-bold mb-4" dir="rtl">
+                تبیانِ اسلام
+            </div>
+
+            <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight mb-6 leading-tight">
+                Your Comprehensive Islamic Companion & Quran Reader
+            </h2>
+
+            <p class="urdu-text text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-10 text-center" dir="rtl">
+                قرآن مجید، مستند کتبِ احادیث، تفاسیر، معروف قراء کی تلاوت، اوقاتِ نماز، قبلہ رخ اور روزمرہ اذکار کا ایک جامع اور مستند ترین ڈیجیٹل پلیٹ فارم۔
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <div class="flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-white text-black font-bold shadow-lg hover:shadow-brand-primary/20 transition cursor-default">
+                    <i class="fa-brands fa-google-play text-2xl text-emerald-600"></i>
+                    <div class="text-left">
+                        <div class="text-[10px] uppercase font-bold text-slate-500 leading-none">Coming Soon on</div>
+                        <div class="text-base leading-tight font-extrabold">Google Play Store</div>
+                    </div>
+                </div>
+
+                <a href="#about" class="px-6 py-3.5 rounded-2xl bg-brand-card hover:bg-brand-cardLight border border-brand-border text-slate-200 font-bold transition flex items-center gap-2">
+                    <i class="fa-solid fa-circle-info text-brand-primary"></i>
+                    About Project
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="border-y border-brand-border/60 bg-brand-card/40 py-8 px-4" dir="ltr">
+        <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <div class="text-2xl sm:text-3xl font-black text-brand-primary">114</div>
+                <div class="text-xs font-semibold text-slate-400 mt-1 uppercase tracking-wider">Surahs Audio & Mushaf</div>
+            </div>
+            <div>
+                <div class="text-2xl sm:text-3xl font-black text-brand-gold">13 & 16</div>
+                <div class="text-xs font-semibold text-slate-400 mt-1 uppercase tracking-wider">Line Indo-Pak Mushaf</div>
+            </div>
+            <div>
+                <div class="text-2xl sm:text-3xl font-black text-brand-primary">6+</div>
+                <div class="text-xs font-semibold text-slate-400 mt-1 uppercase tracking-wider">Authentic Hadith Books</div>
+            </div>
+            <div>
+                <div class="text-2xl sm:text-3xl font-black text-brand-gold">100%</div>
+                <div class="text-xs font-semibold text-slate-400 mt-1 uppercase tracking-wider">Free & Offline Support</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Showcase -->
+    <section id="features" class="py-20 px-4" dir="ltr">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold tracking-widest text-brand-primary uppercase">Core Highlights</span>
+                <h3 class="text-2xl sm:text-4xl font-extrabold text-white mt-2 mb-4">What's Inside Tibyan-e-Islam</h3>
+                <p class="text-sm text-slate-400">تمام بنیادی اسلامی ضروریات کو ایک ہی جگہ انتہائی پرسکون اور تیز رفتار انٹرفیس کے ساتھ جمع کیا گیا ہے۔</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-3xl bg-brand-card border border-brand-border hover:border-brand-primary/40 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary text-xl mb-5">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Original Mushaf Pages</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                        ١٣ سطری اور ١٦ سطری تجوید و سادہ مصحف کے صفحات۔ بالکل اصلی چھپے ہوئے قرآن پاک جیسا تجربہ مع پیج ٹرننگ اور نائٹ موڈ۔
+                    </p>
+                    <span class="text-[11px] font-bold text-brand-gold px-3 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/20">
+                        13 & 16 Line Editions
+                    </span>
+                </div>
+
+                <div class="p-6 rounded-3xl bg-brand-card border border-brand-border hover:border-brand-primary/40 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center text-brand-gold text-xl mb-5">
+                        <i class="fa-solid fa-headphones"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">World Famous Reciters</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                        معروف قراء (عبدالرحمن السدیس، مشاری العفاسی، وغیرہ) کی تلاوت مع اردو ترجمہ۔ مکمل آف لائن ڈاونلوڈ کی سہولت۔
+                    </p>
+                    <span class="text-[11px] font-bold text-brand-primary px-3 py-1 rounded-full bg-brand-primary/10 border border-brand-primary/20">
+                        Offline Listening Available
+                    </span>
+                </div>
+
+                <div class="p-6 rounded-3xl bg-brand-card border border-brand-border hover:border-brand-primary/40 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary text-xl mb-5">
+                        <i class="fa-solid fa-scroll"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Authentic Hadith Books</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                        صحیح بخاری، صحیح مسلم، جامع ترمذی اور دیگر کتبِ احادیث مکمل عربی، اردو اور انگلش ترجمے مع سرچ کے ساتھ۔
+                    </p>
+                    <span class="text-[11px] font-bold text-brand-gold px-3 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/20">
+                        Authentic Sihah Sitta
+                    </span>
+                </div>
+
+                <div class="p-6 rounded-3xl bg-brand-card border border-brand-border hover:border-brand-primary/40 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center text-brand-gold text-xl mb-5">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Accurate Prayer Times</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                        جی پی ایس اور خودکار حساب کے ساتھ درست ترین نماز کے اوقات، سحری و افطاری، زوال ٹائم اور اذان الرٹس۔
+                    </p>
+                    <span class="text-[11px] font-bold text-brand-primary px-3 py-1 rounded-full bg-brand-primary/10 border border-brand-primary/20">
+                        Hanafi & Shafi'i Calculation
+                    </span>
+                </div>
+
+                <div class="p-6 rounded-3xl bg-brand-card border border-brand-border hover:border-brand-primary/40 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary text-xl mb-5">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Precision Qibla Compass</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                        دنیا کے کسی بھی حصے میں قبلہ رخ کا درست تعین کرنے کے لیے جدید کمپاس سینسر اور کعبہ ڈائریکشن گائیڈ۔
+                    </p>
+                    <span class="text-[11px] font-bold text-brand-gold px-3 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/20">
+                        Sensor Calibrated
+                    </span>
+                </div>
+
+                <div class="p-6 rounded-3xl bg-brand-card border border-brand-border hover:border-brand-primary/40 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center text-brand-gold text-xl mb-5">
+                        <i class="fa-solid fa-hands-praying"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Tasbih & Daily Adhkar</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                        صبح و شام کے مسنون اذکار، وائبریشن سپورٹ کے ساتھ ڈیجیٹل تسبیح کاؤنٹر، اور اسماء الحسنیٰ کے روحانی فوائد۔
+                    </p>
+                    <span class="text-[11px] font-bold text-brand-primary px-3 py-1 rounded-full bg-brand-primary/10 border border-brand-primary/20">
+                        Morning & Evening Duas
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 bg-brand-card/30 border-t border-brand-border/60" dir="ltr">
+        <div class="max-w-3xl mx-auto text-center">
+            <h3 class="text-2xl font-bold text-white mb-4">About Tibyan-e-Islam</h3>
+            <p class="urdu-text text-slate-300 text-sm sm:text-base mb-6 leading-loose" dir="rtl">
+                تبیانِ اسلام ایک جامع اور اشتہارات کی الجھن سے پاک ایپلی کیشن ہے جس کا مقصد مسلمانوں کو قرآن و سنت کے قریب لانا ہے۔ اس ایپ میں قرآن، حدیث اور روزمرہ عبادات کی معلومات مستند ذرائع سے لی گئی ہیں تاکہ ہر مسلمان باآسانی اپنی عبادات اور علم میں اضافہ کر سکے۔
+            </p>
+            <div class="flex items-center justify-center gap-6 text-xs text-slate-400">
+                <span><i class="fa-solid fa-shield-halved text-brand-primary mr-1.5"></i> Safe & Secure</span>
+                <span><i class="fa-solid fa-code text-brand-gold mr-1.5"></i> Modern Architecture</span>
+                <span><i class="fa-solid fa-universal-access text-brand-primary mr-1.5"></i> Completely Free</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 px-4 border-t border-brand-border/60 text-center text-xs text-slate-500" dir="ltr">
+        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 <strong>Tibyan-e-Islam</strong>. All rights reserved.
+            </div>
+            <div class="flex items-center gap-6">
+                <button onclick="openModal('privacyModal')" class="hover:text-brand-primary transition">Privacy Policy</button>
+                <button onclick="openModal('termsModal')" class="hover:text-brand-primary transition">Terms of Service</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-brand-card border border-brand-border max-w-2xl w-full max-h-[85vh] rounded-3xl p-6 overflow-y-auto text-left shadow-2xl" dir="ltr">
+            <div class="flex items-center justify-between border-b border-brand-border pb-4 mb-4">
+                <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-user-shield text-brand-primary"></i>
+                    Privacy Policy
+                </h3>
+                <button onclick="closeModal('privacyModal')" class="text-slate-400 hover:text-white text-xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <div class="space-y-4 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                <p><strong>Last Updated:</strong> September 2026</p>
+                <p><strong>Tibyan-e-Islam</strong> respects your privacy. This application is designed to be an Islamic utility and spiritual guide without tracking personal user data.</p>
+                
+                <h4 class="font-bold text-white text-base">1. Information Collection & Usage</h4>
+                <p>We do not collect any personally identifiable information (PII) such as your name, email address, or phone number. All preferences (such as bookmarks, tasbeeh counters, and last read pages) are saved strictly locally on your own device.</p>
+
+                <h4 class="font-bold text-white text-base">2. Device Permissions</h4>
+                <p><strong>Location:</strong> Used strictly for computing accurate Prayer Timings and Qibla Direction based on your geographic coordinates. Your location data is never sent to any external server or saved externally.</p>
+                <p><strong>Notifications:</strong> Used strictly to notify you of prayer times and daily reflections.</p>
+
+                <h4 class="font-bold text-white text-base">3. Third-Party Services</h4>
+                <p>The app may fetch Quran audio streams and public Islamic datasets from open authentic APIs. No personal data is transmitted during these requests.</p>
+
+                <h4 class="font-bold text-white text-base">4. Contact Us</h4>
+                <p>If you have any questions or feedback regarding our privacy practices, you can contact the developer team at our official channels.</p>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-brand-border text-right">
+                <button onclick="closeModal('privacyModal')" class="px-5 py-2.5 rounded-xl bg-brand-primary text-black font-bold text-xs hover:bg-brand-accent transition">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div id="termsModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-brand-card border border-brand-border max-w-lg w-full rounded-3xl p-6 text-left shadow-2xl" dir="ltr">
+            <h3 class="text-lg font-bold text-white mb-3">Terms of Service</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-6">
+                Tibyan-e-Islam is provided as a free Islamic platform for educational and religious purposes. While every effort has been made to verify Quran and Hadith texts with authentic sources, please feel free to report any discrepancy.
+            </p>
+            <div class="text-right">
+                <button onclick="closeModal('termsModal')" class="px-4 py-2 rounded-xl bg-brand-cardLight border border-brand-border text-white text-xs font-bold hover:bg-brand-border transition">
+                    Understood
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+        }
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+        }
+    </script>
+</body>
+  </html>
+
