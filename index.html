@@ -247,7 +247,7 @@
         <div class="max-w-3xl mx-auto text-center">
             <h3 class="text-2xl font-bold text-white mb-4">About Tibyan-e-Islam</h3>
             <p class="urdu-text text-slate-300 text-sm sm:text-base mb-6 leading-loose" dir="rtl">
-                تبیانِ اسلام ایک جامع اور اشتہارات کی الجھن سے پاک ایپلی کیشن ہے جس کا مقصد مسلمانوں کو قرآن و سنت کے قریب لانا ہے۔ اس ایپ میں قرآن، حدیث اور روزمرہ عبادات کی معلومات مستند ذرائع سے لی گئی ہیں تاکہ ہر مسلمان باآسانی اپنی عبادات اور علم میں اضافہ کر سکے۔
+                تبیانِ اسلام ایک جامع، مفت اور سادہ ایپلی کیشن ہے (کم سے کم اور غیر مداخلتی اشتہارات کے ساتھ) جس کا مقصد مسلمانوں کو قرآن و سنت کے قریب لانا ہے۔ اس ایپ میں قرآن، حدیث اور روزمرہ عبادات کی معلومات مستند ذرائع سے لی گئی ہیں تاکہ ہر مسلمان باآسانی اپنی عبادات اور علم میں اضافہ کر سکے۔
             </p>
             <div class="flex items-center justify-center gap-6 text-xs text-slate-400">
                 <span><i class="fa-solid fa-shield-halved text-brand-primary mr-1.5"></i> Safe & Secure</span>
@@ -301,10 +301,13 @@
                 <p><strong>Advertising (Google AdMob):</strong> The app may show ads served by Google AdMob, a third-party service. To show and measure ads, AdMob and its partners may collect and use information such as your device's advertising ID, IP address, device and app information, and how you interact with ads. We do not receive this data and we do not use it for any other purpose. Where required by law (for example in the European Economic Area and the United Kingdom), the app asks for your consent before showing personalised ads.</p>
                 <p><strong>Your choices:</strong> You can reset your advertising ID or opt out of ad personalisation at any time in your device settings (usually Settings &rarr; Google &rarr; Ads). You can learn how Google uses information from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener" class="text-brand-primary underline">policies.google.com/technologies/partner-sites</a> and read the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-brand-primary underline">Google Privacy Policy</a>.</p>
 
-                <h4 class="font-bold text-white text-base">4. Changes to this Policy</h4>
-                <p>We may update this Privacy Policy from time to time. The latest version will always be available on this page, with the date of the last update shown at the top.</p>
+                <h4 class="font-bold text-white text-base">4. Children</h4>
+                <p>The app is not directed at children under 13 and we do not knowingly collect personal information from children.</p>
 
-                <h4 class="font-bold text-white text-base">5. Contact Us</h4>
+                <h4 class="font-bold text-white text-base">5. Changes to this Policy</h4>
+                <p>We may update this Privacy Policy from time to time. The latest version will always be available on this page, with the date of the last update shown at the top. A standalone copy is also available at <a href="privacy.html" class="text-brand-primary underline">privacy.html</a>.</p>
+
+                <h4 class="font-bold text-white text-base">6. Contact Us</h4>
                 <p>If you have any questions or feedback regarding our privacy practices, you can contact the developer team at our official channels.</p>
                 <a href="mailto:tibyaneislam@gmail.com?subject=Tibyan-e-Islam%20Feedback" class="inline-flex items-center gap-3 mt-1 px-4 py-3 rounded-xl bg-brand-cardLight border border-brand-border hover:border-brand-primary transition">
                     <i class="fa-solid fa-envelope text-brand-primary"></i>
@@ -345,6 +348,11 @@
         function closeModal(id) {
             document.getElementById(id).classList.add('hidden');
         }
+        // https://.../#privacy opens the Privacy Policy directly
+        if (location.hash === '#privacy') { openModal('privacyModal'); }
+        window.addEventListener('hashchange', function () {
+            if (location.hash === '#privacy') { openModal('privacyModal'); }
+        });
     </script>
 </body>
   </html>
